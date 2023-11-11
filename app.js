@@ -16,8 +16,6 @@ app.use(morgan('tiny'));
 const authJwt = require('./helpers/jwt');
 app.use(authJwt());
 
-// Static file serving
-//app.use('/public/uploads', express.static(__dirname + '/public/uploads'));
 
 // Error handling
 const errorHandler = require('./helpers/error-handler.js');

@@ -14,15 +14,6 @@ router.get(`/`, async (req, res) => {
     }
 });
 
-// router.get("/", async (req, res) => {
-//     try {
-//       const userList = await User.find().select("-passwordHash");
-//       res.send(userList);
-//     } catch (error) {
-//       console.error("Error getting Buyer users:", error);
-//       res.status(500).send("Internal server error");
-//     }
-//   });
 
 
 // Create a new quote
