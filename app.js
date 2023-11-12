@@ -28,8 +28,8 @@ app.use(`${api}/users`, require('./routes/users'));
 
 // Database Connection
 mongoose.connect(process.env.CONNECTION_STRING, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
+  //useNewUrlParser: true,
+  //useUnifiedTopology: true,
   dbName: 'quote_db',
 }).then(() => { console.log('Database Connection is ready...')}).catch((error) => {  console.log(error) });
 
