@@ -34,7 +34,7 @@ mongoose.connect(process.env.CONNECTION_STRING, {
 }).then(() => { console.log('Database Connection is ready...')}).catch((error) => {  console.log(error) });
 
 // Start the server
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 20000;
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
